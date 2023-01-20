@@ -1,20 +1,12 @@
---[[
-
-Rayfield Interface Suite
-by Sirius
-
-shlex | Designing + Programming
-iRay  | Programming
-
-]]
 
 
 
-local Release = "Beta 7R"
+
+local Release = "Beta"
 local NotificationDuration = 6.5
-local RayfieldFolder = "Rayfield"
+local RayfieldFolder = "RubervaKEY"
 local ConfigurationFolder = RayfieldFolder.."/Configurations"
-local ConfigurationExtension = ".rfld"
+local ConfigurationExtension = ".rubervas"
 
 
 
@@ -881,10 +873,10 @@ function RayfieldLibrary:CreateWindow(Settings)
 	LoadingFrame.Subtitle.TextTransparency = 1
 	Main.Shadow.Image.ImageTransparency = 1
 	LoadingFrame.Version.TextTransparency = 1
-	LoadingFrame.Title.Text = Settings.LoadingTitle or "Rayfield Interface Suite"
-	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius"
-	if Settings.LoadingTitle ~= "Rayfield Interface Suite" then
-		LoadingFrame.Version.Text = "Rayfield UI"
+	LoadingFrame.Title.Text = Settings.LoadingTitle
+	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle
+	if Settings.LoadingTitle ~= "rubssd" then
+		LoadingFrame.Version.Text = "RubervasUI"
 	end
 	Topbar.Visible = false
 	Elements.Visible = false
