@@ -14,6 +14,7 @@ local coreGui = game:GetService("CoreGui")
 
 local library = {flags = {}, toggled = true, keybind = Enum.KeyCode.RightShift, dragSpeed = 0.1}
 
+getgenv().teclaparaabrir = Enum.KeyCode.RightShift
 local themes = {
     Dark = {
         TextColor = Color3.fromRGB(255, 255, 255),
@@ -204,7 +205,7 @@ venuslib.Parent = coreGui
 library = utility.format_table(library)
 
 inputService.InputBegan:Connect(function(input)
-    if input.KeyCode == library.keybind then
+    if input.KeyCode == getgenv().teclaparaabrir then
         library.toggled = not library.toggled
         venuslib.Enabled = library.toggled
     end
