@@ -1591,7 +1591,7 @@ function library:Load(opts)
                     FontSize = Enum.FontSize.Size12,
                     TextSize = 12,
                     TextColor3 = theme.TextColor,
-                    Text = "Keybind",
+                    Text = name,
                     Font = Enum.Font.Gotham,
                     TextXAlignment = Enum.TextXAlignment.Left,
                     Parent = sectionContent
